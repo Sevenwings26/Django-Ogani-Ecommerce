@@ -1,0 +1,10 @@
+Step 1 
+Set up django environment - Start project and app
+
+Step 2 
+Load templates and Route Navigation bar and pages
+
+Step3 - 
+Set up database in settings.py - mysql, postgresql
+Make migrations to database - (Note: The default database is sqlite)
+Create an admin - superuser 

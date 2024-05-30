@@ -3,7 +3,6 @@ from . import views
 from django.views.generic import TemplateView
 
 urlpatterns = [
-<<<<<<< HEAD
     # path('', views.index, name='index'),
     # Navigation bar routing 
     path('', TemplateView.as_view(template_name='nav/index.html'), name="index" ),
@@ -17,7 +16,4 @@ urlpatterns = [
     path('Checkout/', TemplateView.as_view(template_name='nav/pages/checkout.html'), name="checkout" ),
     path('Blog-Details/', TemplateView.as_view(template_name="nav/pages/blog-details.html"), name="blog-details" ),
 
-=======
-    path('', views.index, name='index')
->>>>>>> 381dff768dfadfd0dde741af1c94f794c1adbda6
 ]

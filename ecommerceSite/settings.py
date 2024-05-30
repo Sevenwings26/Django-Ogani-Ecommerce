@@ -79,6 +79,14 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+
+        # Local DB - Mysql connection
+        "ENGINE": "django.db.backends.mysql",
+        'NAME': 'ogani-database',
+        'USER': 'root',
+        'PASSWORD': 'iarowosola9876#+',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
