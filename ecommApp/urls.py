@@ -3,6 +3,10 @@ from . import views
 from django.views.generic import TemplateView
 
 urlpatterns = [
+
+    # login & logout 
+    path('sign-up/', views.signUp, name='register'),
+
     # path('', views.index, name='index'),
     # Navigation bar routing 
     path('', TemplateView.as_view(template_name='nav/index.html'), name="index" ),
