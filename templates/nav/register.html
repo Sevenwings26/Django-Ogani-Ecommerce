@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div>
+<div class="col-md-6 offset-m-3">
     <h3>Register an account</h3>
     <br>
 
     <form method="POST" action="">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="Submit">
-            Register
-        </button>
+
+        <button type="Submit" class="btn btn-secondary">Register</button>
+        <button class="btn btn-danger"><a href="" style="color:white;">Login</a></button>
     </form>
 </div>
 

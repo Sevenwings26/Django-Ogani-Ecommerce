@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import SignUpForm
 from django.contrib.auth import authenticate, login, logout
 
@@ -19,6 +19,7 @@ def signUp(request):
             user = authenticate(username=username, password=password)
             login(request, user)
             messages.success(request, "You have successfully created an account.")
+            return redirect('index')
         else:
             form = SignUpForm()
     return render(request, "nav/register.html", {'form':form})
