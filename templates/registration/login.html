@@ -1,0 +1,18 @@
+{% extends 'const/base.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<div class="container mt-5 d-flex justify-content-center">
+  <form action="" method="post" class="w-50">
+    <h2 class="mb-4">Login User</h2>
+    {% csrf_token %}
+    <div class="mb-3">
+      {{ form }}
+    </div>
+    <p class="mb-3">Don't have an account? <a href="{% url 'register' %}">Create One</a></p>
+    <p class="mb-3"><a href="" >Reset Password</a></p>
+    <button type="submit" class="btn btn-danger">Login</button>
+  </form>
+</div>
+{% endblock %}

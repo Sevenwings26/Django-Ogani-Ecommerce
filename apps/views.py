@@ -1,10 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-# Create your views here.
 
+# main pages 
 def index(request):
     return render(request, "pages/index.html", )
-
 
 def shop(request):
     return render(request, "pages/shop.html", )
@@ -14,3 +13,4 @@ def blog(request):
 
 def contact(request):
     return render(request, "pages/contact.html", )
+
