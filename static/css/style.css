@@ -293,6 +293,7 @@ ol {
 .header__top__right {
 	text-align: right;
 	padding: 10px 0 13px;
+	border: 2px solid salmon;
 }
 
 .header__top__right__social {

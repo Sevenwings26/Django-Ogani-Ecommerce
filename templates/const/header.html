@@ -30,9 +30,13 @@
               </ul>
             </div>
             {% if user.is_authenticated %}
-            <div class="header__top__right__auth">
-              <a href="/logout"><i class="fa fa-user"></i>Logout</a>
-            </div>
+              <div class="header__top__right__auth" style="padding-right:1rem">
+                <p>{{user.username}}</p>
+              </div>
+              <div class="header__top__right__auth">
+                <a href="/logout">
+                </i>Logout</a>
+              </div>
             {% else %}
             <div class="header__top__right__auth">
               <a href="{% url 'login' %}"><i class="fa fa-user"></i> Login</a>
