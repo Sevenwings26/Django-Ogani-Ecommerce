@@ -1,0 +1,6 @@
+colorgram.py==1.2.0
+distlib==0.3.8
+filelock==3.13.1
+pillow==10.4.0
+platformdirs==4.2.0
+virtualenv==20.25.1
